@@ -1,5 +1,6 @@
 export const userEndpoints = {
-    register: '/users/register'
+    register: '/users/register',
+    login: '/users/login',
 }
 
 export const noteEndpoints = {

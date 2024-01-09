@@ -4,7 +4,7 @@ export const createNoteApi = (data, token) => cy.api({
     method: 'POST',
     url: Cypress.env('apiURL') + noteEndpoints.notes,
     headers: {
-        'Authorization': `Bearer ${token}`
+        'X-Auth-Token': `${token}`
     },
     body: data,
     failOnStatusCode: false
